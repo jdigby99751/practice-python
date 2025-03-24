@@ -46,7 +46,7 @@ class TestPolynomial(unittest.TestCase):
 
     def test__str__case_4(self):
         p = polynomial([0, 0, 1])
-        self.assertEqual(str(p), "Polynomial of degree 2: 1x^2")
+        self.assertEqual(str(p), "Polynomial of degree 2: x^2")
 
     def test__str__case_5(self):
         p = polynomial([1, 0, 0, 0, 0, 3.1])
@@ -56,6 +56,11 @@ class TestPolynomial(unittest.TestCase):
         p = polynomial([1, 0, 0, 0, 0, 2])
         print(p)
         self.assertEqual(str(p), "Polynomial of degree 5: 1 + 2x^5")
+
+    def test__str__case_7(self):
+        p = polynomial([1, 0, 0, 1, 0, 2])
+        print(p)
+        self.assertEqual(str(p), "Polynomial of degree 5: 1 + x^3 + 2x^5")
 
     def test__call__case_1(self):
         p = polynomial([1, 2, 3])
