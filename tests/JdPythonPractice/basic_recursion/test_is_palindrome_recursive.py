@@ -1,4 +1,6 @@
-from JdPythonPractice.basic_recursion.is_palindrome import is_palindrome
+from JdPythonPractice.basic_recursion.is_palindrome_recursive import (
+    is_palindrome_recursive as is_palindrome
+)
 import unittest
 
 

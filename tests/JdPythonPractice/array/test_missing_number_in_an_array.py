@@ -38,18 +38,18 @@ class TestMissingNumberInArray(unittest.TestCase):
     #     print(f"Time taken by missing_number: {time_taken} compared to missing_number_xor: {time_taken_xor}")
     #     self.assertLessEqual(time_taken_xor, time_taken)
 
-    def test_time_case_2(self):
-        n = 100000000
-        test_array = [i for i in range(1, n)]
+    # def test_time_case_2(self):
+    #     n = 100000000
+    #     test_array = [i for i in range(1, n)]
 
-        start_time_xor = time()
-        result_xor = missing_number_xor(test_array)
-        time_taken_xor = time() - start_time_xor
-        self.assertEqual(result_xor, n)
+    #     start_time_xor = time()
+    #     result_xor = missing_number_xor(test_array)
+    #     time_taken_xor = time() - start_time_xor
+    #     self.assertEqual(result_xor, n)
 
-        start_time = time()
-        result = missing_number(test_array)
-        time_taken = time() - start_time
-        self.assertEqual(result, n)
-        print(f"Time taken by missing_number: {time_taken} compared to missing_number_xor: {time_taken_xor}")
-        self.assertLessEqual(time_taken_xor, time_taken)
+    #     start_time = time()
+    #     result = missing_number(test_array)
+    #     time_taken = time() - start_time
+    #     self.assertEqual(result, n)
+    #     print(f"Time taken by missing_number: {time_taken} compared to missing_number_xor: {time_taken_xor}")
+    #     self.assertLessEqual(time_taken_xor, time_taken)

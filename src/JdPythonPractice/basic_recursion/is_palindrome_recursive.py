@@ -10,7 +10,7 @@
 #     else:
 #         return is_palindrome(string, _i + 1, _j - 1)
 
-def is_palindrome(s: str):
+def is_palindrome_recursive(s: str):
     if len(s) <= 1:
         return True
     i_pos = None
@@ -25,9 +25,9 @@ def is_palindrome(s: str):
             break
     if s[i_pos].lower() != s[j_pos].lower():
         return False
-    return is_palindrome(s[i_pos+1:j_pos])
+    return is_palindrome_recursive(s[i_pos+1:j_pos])
 
 
 if __name__ == "__main__":
-    print(is_palindrome("ABCDCBA"))  # TRUE
-    print(is_palindrome("TAKE U FORWARD"))  # FALSE
+    print(is_palindrome_recursive("ABCDCBA"))  # TRUE
+    print(is_palindrome_recursive("TAKE U FORWARD"))  # FALSE

@@ -4,3 +4,7 @@ tox
 sphinx
 pytest
 setuptools
+numpy
+matplotlib
+mocking
+scipy

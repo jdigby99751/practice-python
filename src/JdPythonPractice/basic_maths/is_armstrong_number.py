@@ -3,7 +3,7 @@ import math
 
 def is_armstrong_number(n: int) -> bool:
     """
-    Checks if a number is a palindrome
+    Checks if a number is a Armstrong number
     """
     # num_digits = len(str(n))
     # check_value = 0
