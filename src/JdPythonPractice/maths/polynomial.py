@@ -57,7 +57,7 @@ class polynomial():
         for i, v in enumerate(self.coefficients):
             if v == 0:
                 continue  # skip zero coefficients
-            s += f"{v}"
+            s += f"{v}" if v != 1.0
             if i > 0:
                 s += "x"  # add x if degree > 0
                 if i > 1:
